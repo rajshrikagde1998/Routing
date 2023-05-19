@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <ul class="list-group" >
+                <li class="list-group-item" 
+                [routerLink]="['/products',prod.pid]"
+                [queryParams]="{canEdit : prod.canReturn}"
+                *ngFor="let prod of productsData">
+                    {{prod.pname}}
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
